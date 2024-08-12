@@ -5,24 +5,24 @@ import Link from 'next/link'
 
 const icons = [
   {
-    path: '/',
+    path: 'https://www.youtube.com/@CWithHamiz',
     name: <RiYoutubeFill />
 
   },
   {
-    path: '/',
+    path: 'https://www.instagram.com/hamizmuzaffar/',
     name: <RiInstagramFill />
   },
   {
-    path: '/',
+    path: 'https://www.linkedin.com/in/hamiz-muzaffer/',
     name: <RiLinkedinFill />
   },
   {
-    path: '/',
+    path: 'https://www.facebook.com/hamiz.muzaffar/',
     name: <RiFacebookFill />
   },
   {
-    path: '/',
+    path: 'https://github.com/HamizMuzaffer',
     name: <RiGithubFill />
   }
 ]
@@ -31,7 +31,7 @@ export const Social = ({ containerStyles, iconsStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return(
-        <Link href={icon.path} key={index}>
+        <Link href={icon.path} key={index} target='blank'>
                <div className={`${icon.name}`}>{icon.name}</div>
         </Link>
        )

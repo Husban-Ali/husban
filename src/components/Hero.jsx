@@ -22,12 +22,12 @@ export const Hero = () => {
               <Link href='/contacts'>
                 <Button className='gap-x-2'>Contact Me <Send size={18} /></Button>
               </Link>
-              <Link href=''>
+              <Link href='/resume/CV-Hamiz Muzaffer.pdf' target="blank">
                 <Button className='gap-x-2 px-7'>Resume<Download size={18} /></Button>
               </Link>
             </div>
             {/* Socials */}
-            <Social containerStyles="flex gap-x-0 mx-auto xl:mx-0 justify-center" iconsStyles="text-foreground text-[22px] hover:bg-color-slate transition-all" />
+            <Social containerStyles="flex gap-x-3 mx-auto xl:mx-0 justify-center" iconsStyles="text-foreground text-[22px] hover:bg-color-slate transition-all" />
           </div>
           <div className=" hidden xl:flex relative">
             <Badge
@@ -49,7 +49,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+        <div className="hidden md:flex absolute left-2/4 xl:bottom-12 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary cursor-pointer" />
         </div>
       </div>
