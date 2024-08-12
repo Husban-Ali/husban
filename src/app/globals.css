@@ -73,9 +73,13 @@
 }
 
 .h1{
-  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-3px] font-bold
+  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold mb-4
 }
 
 .subtitle{
   @apply text-muted-foreground text-lg mb-8 font-light
+}
+
+#badge{
+  @apply z-10 w-[200px] h-[60px]  dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-1;
 }

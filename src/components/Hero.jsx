@@ -1,24 +1,53 @@
+"use client"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { Download, Send } from "lucide-react"
-import { RiBriefcase4Fill, RiTeamFill, RiTodoFill, RiArrowDownSLine } from 'react-icons/ri'
+import { RiTeamFill, RiTodoFill, RiArrowDownSLine } from 'react-icons/ri'
 
 import { DevImage } from "./DevImage"
 import { Badge } from "./Badge"
 import { Social } from "./Social"
+import TypingEffect from "./TyingEffect"
 
 export const Hero = () => {
   return (
-    <section className="py-12 xl:py-26 h-[84vh] xl:pt-28  w-full bg-white dark:bg-[#0b0908] bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-12 h-[84vh] xl:pt-8  w-full bg-white dark:bg-[#0b0908]  bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Full Stack Developer</div>
-            <h1 className="h1">Hello,My Name is Hamiz Muzaffer</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores delectus nostrum facere, temporibus accusamus ea, vitae odit ipsa rerum, consequuntur architecto eveniet maiores fuga molestias aspernatur? Ratione recusandae sint eius.</p>
-            <div>buttons</div>
+            <TypingEffect />
+            <p className="subtitle max-w-[600px] mx-auto xl:mx-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores delectus nostrum facere, temporibus accusamus ea, vitae odit ipsa rerum, consequuntur architecto eveniet maiores fuga molestias aspernatur? Ratione recusandae sint eius.</p>
+            <div className=" flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 justify-center ">
+              <Link href='/contacts'>
+                <Button className='gap-x-2'>Contact Me <Send size={18} /></Button>
+              </Link>
+              <Link href=''>
+                <Button className='gap-x-2 px-7'>Resume<Download size={18} /></Button>
+              </Link>
+            </div>
+            {/* Socials */}
+            <Social containerStyles="flex gap-x-0 mx-auto xl:mx-0 justify-center" iconsStyles="text-foreground text-[22px] hover:bg-color-slate transition-all" />
           </div>
-          <div className="hidden xl-flex relative">image</div>
+          <div className=" hidden xl:flex relative">
+            <Badge
+              icon={<RiTodoFill />}
+              endCountNum={10}
+              containerStyles=" absolute bg-secondary top-[0%] -left-[12rem]"
+              badgeText={"Projects"}
+              endCountText={'+'}
+            />
+            <Badge
+              icon={<RiTeamFill />}
+              endCountNum={189}
+              containerStyles="absolute bg-secondary top-[0%] -left-[32rem]"
+              badgeText={"Commits"}
+              endCountText={'+'}
+            />
+            <div className="dark:bg-hero_shape2_light bg-hero_shape2_dark w-[500px] h-[550px] bg-no-repeat absolute -top-1 -right-2">
+              <DevImage containerStyles="bg-here-shape w-[500px] h-[600px] -left-6 top-2 bg-no-repeat relative bg-bottom" />
+            </div>
+          </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary cursor-pointer" />
