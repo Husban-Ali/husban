@@ -17,7 +17,7 @@ export const Hero = () => {
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Full Stack Developer</div>
             <TypingEffect />
-            <p className="subtitle max-w-[600px] mx-auto xl:mx-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores delectus nostrum facere, temporibus accusamus ea, vitae odit ipsa rerum, consequuntur architecto eveniet maiores fuga molestias aspernatur? Ratione recusandae sint eius.</p>
+            <p className="subtitle max-w-[600px] mx-auto xl:mx-0 text-center">As a Full Stack Developer, I specialize in React, Next.js, Node.js, Express, MongoDB, Material-UI, and Tailwind CSS. Currently, I am expanding my knowledge in relational databases and gearing up for the AWS Services Associate Program.</p>
             <div className=" flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 justify-center ">
               <Link href='/contacts'>
                 <Button className='gap-x-2'>Contact Me <Send size={18} /></Button>
