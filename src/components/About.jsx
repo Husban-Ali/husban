@@ -295,7 +295,7 @@ export const About = () => {
                                                 {getData(skillData,'tools').data.map((item,index)=>{
                                                 const {imgPath} = item;
                                                 return (
-                                                            <div className="px-4 py-2">
+                                                            <div className="px-4 py-2" key={index}>
                                                                 <Image src={imgPath}  width={50} height={50} priority alt/>
                                                             </div>
                                                 )})}
