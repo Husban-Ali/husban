@@ -178,7 +178,7 @@ export const About = () => {
                                 <TabsContent value="personal">
                                     <div className="text-center xl:text-left">
                                         <h3 className="h3 mb-4">Aspiring full stack dev passionate about building end-to-end web solutions.</h3>
-                                        <p className="subtitle max-w-xl mx-auto xl:mx-0">I'm an up-and-coming full stack developer with a passion for building comprehensive web solutions.I bring enthusiasm, a solid foundation in both front-end and back-end technologies, and a strong drive to learn.I'm eager to contribute to innovative projects while continuously expanding my expertise across the entire web development stack.</p>
+                                        <p className="subtitle max-w-xl mx-auto xl:mx-0">I&apos;m an up-and-coming full stack developer with a passion for building comprehensive web solutions.I bring enthusiasm, a solid foundation in both front-end and back-end technologies, and a strong drive to learn.I&apos;m eager to contribute to innovative projects while continuously expanding my expertise across the entire web development stack.</p>
                                         <div className="grid xl:grid-cols-2 gap-4 gap-x-8 mb-12">
                                             {infoData.map((item, index) => {
                                                 return (
@@ -296,7 +296,7 @@ export const About = () => {
                                                 const {imgPath} = item;
                                                 return (
                                                             <div className="px-4 py-2" key={index}>
-                                                                <Image src={imgPath}  width={50} height={50} priority alt=""/>
+                                                                <Image src={imgPath}  width={50} height={50} priority alt="dev"/>
                                                             </div>
                                                 )})}
                                             </div>
