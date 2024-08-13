@@ -23,7 +23,7 @@ export const MobileNav = () => {
                 <Logo />
               </div>
             </SheetClose>
-            <Nav  containerStyles="flex flex-col items-center pt-4 gap-y-6 font-bold" linkStyles="text-2xl" onNavClick={handleClose}/>
+            <Nav  containerStyles="flex flex-col items-center pt-4 gap-y-6 font-light" linkStyles="text-2xl" onNavClick={handleClose}/>
           
           </div>
           <Social containerStyles="flex gap-x-4" iconsStyles="text-2xl"/>

@@ -11,7 +11,7 @@ import TypingEffect from "./TyingEffect"
 
 export const Hero = () => {
   return (
-    <section className="py-12 xl:py-12 h-[84vh] xl:pt-8  w-full bg-white dark:bg-[#0b0908]  bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-12 h-[84vh] xl:pt-8  w-full bg-white dark:bg-[#0b0908]  bg-no-repeat bg-bottom bg-cover dark:bg-none mb-24">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center">
