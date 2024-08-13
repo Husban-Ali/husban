@@ -204,7 +204,7 @@ export const About = () => {
                                 <TabsContent value="qualificatiom">
                                     <div>
                                         <h3 className="h3 mb-8 text-center xl:text-left">My Journey</h3>
-                                        <div  className="grid md:grid-cols-2 gap-y-8 sm:ml-28">
+                                        <div  className="grid md:grid-cols-2 gap-y-8">
                                             <div>
                                                 <div>
                                                     <div className="flex gap-x-4 items-center text-[22px] text-primary  mb-4">
