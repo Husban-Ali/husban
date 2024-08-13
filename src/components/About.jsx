@@ -290,7 +290,7 @@ export const About = () => {
                                         <div>
                                             <h4 className="text-xl font-semibold text-center xl:text-left mb-2">What I am good at!</h4>
                                             <div className="border-b border-border mb-4 "></div>
-                                            <div className="flex flex-wrap">
+                                            <div className="flex flex-wrap justify-center xl:justify-start">
                                                 
                                                 {getData(skillData,'tools').data.map((item,index)=>{
                                                 const {imgPath} = item;

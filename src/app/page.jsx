@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
+import { Services } from "@/components/Services";
 
 export default function Home() {
   
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="container h-full">
         <Hero />
         <About />
+        <Services/>
       </div>
 
     </>
