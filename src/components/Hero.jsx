@@ -22,7 +22,7 @@ export const Hero = () => {
               <Link href='/contacts'>
                 <Button className='gap-x-2'>Contact Me <Send size={18} /></Button>
               </Link>
-              <Link href='https://bronze-gusti-97.tiiny.site/' target="blank">
+              <Link href='/resume/CV-Hamiz Muzaffer.pdf' target="blank">
                 <Button className='gap-x-2 px-7'>Resume<Download size={18} /></Button>
               </Link>
             </div>

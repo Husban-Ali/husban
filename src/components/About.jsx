@@ -296,7 +296,7 @@ export const About = () => {
                                                 const {imgPath} = item;
                                                 return (
                                                             <div className="px-4 py-2" key={index}>
-                                                                <Image src={imgPath}  width={50} height={50} priority alt/>
+                                                                <Image src={imgPath}  width={50} height={50} priority alt=""/>
                                                             </div>
                                                 )})}
                                             </div>
