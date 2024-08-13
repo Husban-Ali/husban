@@ -99,10 +99,6 @@
  @apply text-[22px] font-semibold
 }
 
-
-
-@layer components {
-  .custom-svg-path {
-    @apply fill-black dark:fill-[#ffff];
-  }
+html {
+  @apply scroll-smooth
 }
