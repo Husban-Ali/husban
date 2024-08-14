@@ -38,7 +38,7 @@ export const Hero = () => {
           <div className="hidden xl:flex relative">
             <Badge
               icon={<RiTodoFill />}
-              endCountNum={10}
+              endCountNum={15}
               containerStyles="absolute bg-secondary top-[0%] -left-[12rem]"
               badgeText={"Projects"}
               endCountText={'+'}

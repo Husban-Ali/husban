@@ -172,11 +172,11 @@ const projectData = [
 export const Work = () => {
     return (
 
-        <section className="relative mb-12 xl:mb-48">
+        <section className="relative mb-12 xl:mb-24">
     <div className="container mx-auto px-4">
         <div className="flex flex-col xl:flex-row items-center xl:items-start justify-between">
-            <div className="max-w-[400px] w-full mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:mb-0 xl:pr-8">
-                <h2 className="section-title mb-4 text-center">Latest Projects</h2>
+            <div className="max-w-[600px] w-full mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:mb-0 xl:pr-8">
+                <h2 className="section-title mb-4 text-center xl:text-left">Latest Projects</h2>
                 <p className="subtitle mb-4 text-center xl:text-left">Explore my latest work, showcasing the challenges I&apos;ve tackled and the creative solutions I&apos;ve crafted. Curious to see more? Dive into all my projects!</p>
                 <Link href="/projects"><Button>All Projects</Button></Link>
             </div>
