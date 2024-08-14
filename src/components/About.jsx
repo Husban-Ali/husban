@@ -149,6 +149,9 @@ const skillData = [
             {
                 imgPath: "/about/icons/bootstrap-fill-svgrepo-com.svg"
             },
+            {
+                imgPath : "/about/icons/java-svgrepo-com.svg"
+            }
         ]
     },
 ]
