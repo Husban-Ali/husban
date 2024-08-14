@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import Head from "next/head";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,10 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <meta name="color-scheme" content="light dark"/>
-      <Head>
-        <link rel="icon" href="/hm.ico" />
-        <title>Hamiz Muzaffer</title>
-      </Head>
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme = 'light'>
           <Header />

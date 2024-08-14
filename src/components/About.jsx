@@ -52,7 +52,7 @@ const educationData = [
                 university: "Pakistan Freelance Training Program",
                 qualification: "Frontend Development",
                 year: '2023'
-            },           
+            },
         ]
     },
     {
@@ -158,7 +158,7 @@ export const About = () => {
         return arr.find((item) => item.title === title)
     }
     return (
-        <section id="about"  className="xl:h-[860px] pb-12 xl:py-24">
+        <section id="about" className="xl:h-[860px] pb-12 xl:py-24">
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">About Me</h2>
                 <div className="flex flex-col xl:flex-row">
@@ -177,34 +177,26 @@ export const About = () => {
                             <div className="text-lg mt-12 xl:mt-8">
                                 <TabsContent value="personal">
                                     <div className="text-center xl:text-left">
-                                        <h3 className="h3 mb-4">Aspiring full stack dev passionate about building end-to-end web solutions.</h3>
-                                        <p className="subtitle max-w-xl mx-auto xl:mx-0">I&apos;m an up-and-coming full stack developer with a passion for building comprehensive web solutions.I bring enthusiasm, a solid foundation in both front-end and back-end technologies, and a strong drive to learn.I&apos;m eager to contribute to innovative projects while continuously expanding my expertise across the entire web development stack.</p>
-                                        <div className="grid xl:grid-cols-2 gap-4 gap-x-8 mb-12">
-                                            {infoData.map((item, index) => {
-                                                return (
-                                                    <div key={index} className="flex items-center gap-x-4 mx-auto xl:mx-0">
-                                                        <div className="text-primary">
-                                                            {item.icon}
-                                                        </div>
-                                                        <div>
-                                                            {item.text}
-                                                        </div>
+                                        <h3 className="text-2xl md:text-3xl font-bold mb-4 leading-tight">Aspiring full stack dev passionate about building end-to-end web solutions.</h3>
+                                        <p className="text-base md:text-lg mb-6 max-w-xl mx-auto xl:mx-0">I&apos;m an up-and-coming full stack developer with a passion for building comprehensive web solutions. I bring enthusiasm, a solid foundation in both front-end and back-end technologies, and a strong drive to learn. I&apos;m eager to contribute to innovative projects while continuously expanding my expertise across the entire web development stack.</p>
+                                        <div className="gap-y-4 mb-12 grid md:grid-cols-2">
+                                            {infoData.map((item, index) => (
+                                                <div key={index} className="flex items-center gap-x-4 mx-auto xl:mx-0 max-w-sm">
+                                                    <div className="text-primary flex-shrink-0">
+                                                        {item.icon}
                                                     </div>
-                                                )
-                                            })}
-                                        </div>
-
-                                        <div className="flex flex-col gap-y-2">
-                                            <div className="text-primary">Languages I know</div>
-                                            <div className="border-b border-border"></div>
-                                            <div className="">English,Urdu</div>
+                                                    <div className="text-left text-sm md:text-base">
+                                                        {item.text}
+                                                    </div>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                 </TabsContent>
                                 <TabsContent value="qualificatiom">
                                     <div>
                                         <h3 className="h3 mb-8 text-center xl:text-left">My Journey</h3>
-                                        <div  className="grid md:grid-cols-2 gap-y-8">
+                                        <div className="grid md:grid-cols-2 gap-y-8">
                                             <div>
                                                 <div>
                                                     <div className="flex gap-x-4 items-center text-[22px] text-primary  mb-4">
@@ -268,40 +260,41 @@ export const About = () => {
 
                                 </TabsContent>
 
-                                <TabsContent value="skills" > 
-                                    <div className="text-center xl:text-left"> 
+                                <TabsContent value="skills" >
+                                    <div className="text-center xl:text-left">
                                         <h3 className="h3 mb-8">Things I know</h3>
                                         <div className="mb-16">
-                                        <h4 className="text-xl font-semibold mb-2">Skillls</h4>
-                                        <div className="border-b border-border mb-4 "></div>
-                                        <div>
-                                            {getData(skillData,"skills").data.map((item,index)=>{
-                                               const {name} = item 
-                                               return (
-                                                <div className="w-2/4  mx-auto xl:mx-0 text-center xl:text-left" key={index}>
-                                                    <div className="font-medium">
-                                                        - {name}
-                                                    </div>
-                                                </div>
-                                               )
-                                            })}
-                                        </div>
+                                            <h4 className="text-xl font-semibold mb-2">Skillls</h4>
+                                            <div className="border-b border-border mb-4 "></div>
+                                            <div>
+                                                {getData(skillData, "skills").data.map((item, index) => {
+                                                    const { name } = item
+                                                    return (
+                                                        <div className="w-2/4  mx-auto xl:mx-0 text-center xl:text-left" key={index}>
+                                                            <div className="font-medium">
+                                                                - {name}
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })}
+                                            </div>
                                         </div>
                                         <div>
                                             <h4 className="text-xl font-semibold text-center xl:text-left mb-2">What I am good at!</h4>
                                             <div className="border-b border-border mb-4 "></div>
                                             <div className="flex flex-wrap justify-center xl:justify-start">
-                                                
-                                                {getData(skillData,'tools').data.map((item,index)=>{
-                                                const {imgPath} = item;
-                                                return (
-                                                            <div className="px-4 py-2" key={index}>
-                                                                <Image src={imgPath}  width={50} height={50} priority alt="dev"/>
-                                                            </div>
-                                                )})}
+
+                                                {getData(skillData, 'tools').data.map((item, index) => {
+                                                    const { imgPath } = item;
+                                                    return (
+                                                        <div className="px-4 py-2" key={index}>
+                                                            <Image src={imgPath} width={50} height={50} priority alt="dev" />
+                                                        </div>
+                                                    )
+                                                })}
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </TabsContent>
                             </div>
