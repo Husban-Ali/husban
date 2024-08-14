@@ -14,8 +14,8 @@ const Contacts = () => {
               <span className='w-[30px] h-[2px] bg-primary'></span>
               <span className="font-medium">Hello There 👋</span>
             </div>
-            <h1 className='h1 max-w-md mb-8'>Let's Work Together</h1>
-            <p className='subtitle max-w-[600px]'>Looking for a dedicated developer to bring your ideas to life? I'm eager to collaborate on innovative projects that make a difference. Let's create something exceptional!</p>
+            <h1 className='h1 max-w-md mb-8'>Let&apos;s Work Together</h1>
+            <p className='subtitle max-w-[600px]'>Looking for a dedicated developer to bring your ideas to life? I am eager to collaborate on innovative projects that make a difference. Let&apos;s create something exceptional!</p>
           </div>
           <div className='hidden xl:flex w-full bg-developer bg-top bg-contain bg-no-repeat'>
           </div>
@@ -32,7 +32,7 @@ const Contacts = () => {
             </div>
             <div className='flex items-center gap-x-4'>
               <HomeIcon size={24} className='text-primary' />
-              <div>Karachi, Sindh, Pakistan</div>
+              <div>Karachi,Pakistan</div>
             </div>
           </div>
           <Form />
