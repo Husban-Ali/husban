@@ -6,6 +6,14 @@ import ProjectCard from "@/components/ProjectCard"
 
 const projectData = [
   {
+    image: '/work/msytry.jpg',
+    category: "Full Stack",
+    link: "https://mystry-murex.vercel.app/",
+    name: "Mystery Message",
+    description: 'An anonymous message sending app built using next js and MongoDB as a database',
+    github: 'https://github.com/HamizMuzaffer/nextjs-full-stack.git'
+  },
+  {
     image: '/work/smit.png',
     category: "Full Stack",
     link: "https://smit-student-portal.vercel.app/",
@@ -35,7 +43,15 @@ const projectData = [
     link: "https://hamiz.vercel.app/",
     name: "Digital Agency",
     description: 'A digital agency UI with PWA integration',
-    github: ''
+    github: 'https://github.com/HamizMuzaffer/portfolio-website.git'
+  },
+  {
+    image: '/work/site.png',
+    category: "Next Js",
+    link: "https://hamizmuzaffer.vercel.app/",
+    name: "Portfolio Website",
+    description: 'My Portfolio App built using Framer motion and shadCN UI library',
+    github: 'https://github.com/HamizMuzaffer/portfolio-website.git'
   },
 
   
