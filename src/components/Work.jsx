@@ -16,10 +16,10 @@ const projectData = [
   {
     image: "/work/image3.png",
     category: "MERN Stack",
-    link: "https://saylani-tech.vercel.app/",
+    link: "https://saylani-technology.vercel.app/",
     name: "Saylani TEC",
     description: "Website of saylani tech limited",
-    github: "https://github.com/Husban-Ali/saylani_tech.git",
+    github: "https://github.com/Husban-Ali/saylani-technology.git",
   },
   {
     image: "/work/image4.png",
@@ -46,7 +46,7 @@ const projectData = [
     name: "Portfolio Website",
     description:
       "My Portfolio App built using Framer motion and shadCN UI library",
-    github: "",
+    github: "https://github.com/Husban-Ali/husban.git",
   },
 
   {
