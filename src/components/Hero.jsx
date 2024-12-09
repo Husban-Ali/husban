@@ -1,13 +1,12 @@
 "use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Download, Send } from "lucide-react";
-import { RiTeamFill, RiTodoFill, RiArrowDownSLine } from "react-icons/ri";
+import { Send } from "lucide-react";
+import { RiArrowDownSLine } from "react-icons/ri";
 
-import { DevImage } from "./DevImage";
-import { Badge } from "./Badge";
 import { Social } from "./Social";
 import TypingEffect from "./TyingEffect";
+import { useEffect } from "react";
 
 export const Hero = () => {
   const handleScroll = () => {
@@ -16,6 +15,22 @@ export const Hero = () => {
       aboutElement.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    // Ensure handleScroll only runs on the client side
+    if (typeof window !== "undefined") {
+      const scrollButton = document.querySelector(".scroll-button");
+      if (scrollButton) {
+        scrollButton.addEventListener("click", handleScroll);
+      }
+      return () => {
+        if (scrollButton) {
+          scrollButton.removeEventListener("click", handleScroll);
+        }
+      };
+    }
+  }, []);
+
   return (
     <section className="py-12 xl:py-12 min-h-screen xl:pt-8 w-full bg-white dark:bg-[#0b0908] bg-no-repeat bg-bottom bg-cover dark:bg-none xl:mb-12">
       <div className="container mx-auto">
@@ -44,34 +59,14 @@ export const Hero = () => {
               iconsStyles="text-foreground text-[22px] hover:bg-color-slate transition-all"
             />
           </div>
-          <div className="hidden xl:flex relative">
-            <Badge
-              icon={<RiTodoFill />}
-              endCountNum={15}
-              containerStyles="absolute bg-secondary top-[0%] -left-[12rem]"
-              badgeText={"Projects"}
-              endCountText={"+"}
-            />
-            <Badge
-              icon={<RiTeamFill />}
-              endCountNum={189}
-              containerStyles="absolute bg-secondary top-[0%] -left-[32rem]"
-              badgeText={"Commits"}
-              endCountText={"+"}
-            />
-            <div className="dark:bg-hero_shape2_light bg-hero_shape2_dark w-[500px] h-[550px] bg-no-repeat absolute -top-1 -right-2">
-              <DevImage containerStyles="bg-here-shape w-[500px] h-[600px] -left-6 top-2 bg-no-repeat relative bg-bottom" />
-            </div>
-          </div>
+          {/* Other content */}
         </div>
 
         <div
-          className="hidden md:flex absolute left-2/4 xl:bottom-12 animate-bounce"
-          onClick={handleScroll}
+          className="hidden md:flex absolute left-2/4 xl:bottom-12 animate-bounce scroll-button"
+          aria-label="Scroll to About"
         >
-          <button onClick={handleScroll} aria-label="Scroll to About">
-            <RiArrowDownSLine className="text-3xl text-primary cursor-pointer" />
-          </button>
+          <RiArrowDownSLine className="text-3xl text-primary cursor-pointer" />
         </div>
       </div>
     </section>
