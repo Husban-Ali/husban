@@ -6,16 +6,17 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hamiz Muzaffer",
-  description: "Aspiring Full Stack Developer. Eager to build end to end web solutions.",
+  title: "Husban Ali",
+  description:
+    "Aspiring MERN Stack Developer. Eager to build end to end web solutions.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <meta name="color-scheme" content="light dark"/>
+      <meta name="color-scheme" content="light dark" />
       <body className={outfit.className}>
-        <ThemeProvider attribute="class" defaultTheme = 'light'>
+        <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}
           <Footer />

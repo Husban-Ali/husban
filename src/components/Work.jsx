@@ -14,126 +14,41 @@ import { Description } from "@radix-ui/react-dialog";
 
 const projectData = [
   {
-    image: "/work/msytry.jpg",
-    category: "Full Stack",
-    link: "https://mystry-murex.vercel.app/",
-    name: "Mystery Message",
+    image: "/work/image3.png",
+    category: "MERN Stack",
+    link: "https://saylani-tech.vercel.app/",
+    name: "Saylani TEC",
+    description: "Website of saylani tech limited",
+    github: "https://github.com/Husban-Ali/saylani_tech.git",
+  },
+  {
+    image: "/work/image4.png",
+    category: "MERN Stack",
+    link: "https://smit-web-iota.vercel.app/",
+    name: "SMIT WEBSITE",
+    description: "An SMIT website made using MERN stack with amazing features",
+    github: "https://github.com/MRsabcod/SMIT-Web.git",
+  },
+  {
+    image: "/work/image2.png",
+    category: "Blog",
+    link: "https://husban-ali.github.io/patanh-bs-ban-gyi-/",
+    name: "Blog",
     description:
-      "An anonymous message sending app built using next js and MongoDB as a database",
-    github: "https://github.com/HamizMuzaffer/nextjs-full-stack.git",
-  },
-  {
-    image: "/work/smit.png",
-    category: "Full Stack",
-    link: "https://smit-student-portal.vercel.app/",
-    name: "SMIT Student Portal",
-    description:
-      "A student portal website made using MERN stack with amazing features",
-    github:
-      "https://github.com/HamizMuzaffer/SMIT-Assignment-Submission-Portal.git",
-  },
-  {
-    image: "/work/node.png",
-    category: "Node Js",
-    link: "http://node-blog-env-1.eba-3qpif8kf.ap-south-1.elasticbeanstalk.com/#",
-    name: "Node Blog",
-    description:
-      "A service side blog writing app made using EJS for server side pages and MongoDB as a database",
-    github: "",
-  },
-  {
-    image: "/work/node.png",
-    category: "Node Js",
-    link: "https://github.com/HamizMuzaffer/URL-Shortener.git",
-    name: "URL Shortener",
-    description: "A custom URL shortener made using NodeJs",
-    github: "https://github.com/HamizMuzaffer/URL-Shortener.git",
-  },
-  {
-    image: "/work/agency.png",
-    category: "Next Js",
-    link: "https://hamiz.vercel.app/",
-    name: "Digital Agency",
-    description: "A digital agency UI with PWA integration",
-    github: "",
+      "A service side blog writing app made using HTML , CSS and Firebase as a database",
+    github: "https://github.com/Husban-Ali/patanh-bs-ban-gyi-.git",
   },
 
   {
-    image: "/work/Vervestyle.png",
-    category: "HTML,CSS",
-    link: "https://hamizmuzaffer.github.io/ClothingStore-Vervestyle/",
-    name: "VerveStyle Clothing",
-    description: "A Basic UI for a clothing website built using CSS",
-    github: "https://github.com/HamizMuzaffer/ClothingStore-Vervestyle",
-  },
-  {
-    image: "/work/wordwise.png",
-    category: "HTML,CSS",
-    link: "https://hamizmuzaffer.github.io/WordWise/",
-    name: "WordWise",
-    description: "A Landing page UI for a online book reading platform",
-    github: "https://github.com/HamizMuzaffer/WordWise.git",
-  },
-  {
-    image: "/work/pepsi.png",
-    category: "HTML,CSS",
-    link: "https://hamizmuzaffer.github.io/Pepsi-Clone/",
-    name: "Pepsi Website Clone",
-    description: "A UI clone for pepsi website build using HTML and CSS",
-    github: "https://github.com/HamizMuzaffer/Pepsi-Clone.git",
-  },
-  {
-    image: "/work/rejouice.png",
-    category: "HTML,CSS",
-    link: "https://hamizmuzaffer.github.io/Rejouice-Clone/",
-    name: "Rejouice Website",
+    image: "/work/image.png",
+    category: "Next Js",
+    link: "https://husban.vercel.app/",
+    name: "Portfolio Website",
     description:
-      "An Animated Website built using CSS and JS with the integration of GSAP and locomotive scroll",
-    github: "https://github.com/HamizMuzaffer/Rejouice-Clone.git",
+      "My Portfolio App built using Framer motion and shadCN UI library",
+    github: "",
   },
-  {
-    image: "/work/portfolio.png",
-    category: "HTML,CSS",
-    link: "https://umairahmedportfolio.netlify.app/",
-    name: "Video Editing Porfolio",
-    description:
-      "A video editing porflio Site built using Locomotive scroll and swiper js",
-    github: "https://github.com/HamizMuzaffer/umairbashir.git",
-  },
-  {
-    image: "/work/umair.png",
-    category: "HTML,CSS",
-    link: "https://umairbashir-henna.vercel.app/",
-    name: "Portfolio Site",
-    description: "A video editing portfolio site built using HTML,CSS",
-    github: "https://github.com/HamizMuzaffer/UmairWebsite.git",
-  },
-  {
-    image: "/work/stopwatch.png",
-    category: "JavaScript",
-    link: "https://hamizmuzaffer.github.io/StopWatch-Js/",
-    name: "Stopwatch",
-    description:
-      "A stopwatch with reset and pause feature for user built using vanilla JS",
-    github: "https://github.com/HamizMuzaffer/StopWatch-Js.git",
-  },
-  {
-    image: "/work/Todo.png",
-    category: "JavaScript",
-    link: "https://hamizmuzaffer.github.io/To-Do-App/",
-    name: "Todo App",
-    description: "A JavaScript todo app with feature of edit and delete",
-    github: "https://hamizmuzaffer.github.io/To-Do-App/",
-  },
-  {
-    image: "/work/calculator.png",
-    category: "JavaScript",
-    link: "https://hamizmuzaffer.github.io/Calculator-App/",
-    name: "Calculator",
-    description:
-      "A JavaScript calculator with all arithmetic operations enabled",
-    github: "https://hamizmuzaffer.github.io/Calculator-App/",
-  },
+
   {
     image: "/work/airport.png",
     category: "JAVA",
@@ -144,40 +59,14 @@ const projectData = [
     github: "https://github.com/HamizMuzaffer/Airport-Management.git",
   },
   {
-    image: "/work/codeweb.png",
-    category: "JavaScript",
-    link: "https://hamizmuzaffer.github.io/CodeWeb/",
-    name: "CodeWeb",
-    description:
-      "A complete blog writing app made using JavaScript and Firebase with multiple features including search,write and edit and authorization",
-    github: "https://github.com/HamizMuzaffer/CodeWeb.git",
-  },
-  {
-    image: "/work/prostack.png",
-    category: "JavaScript",
-    link: "https://hamizmuzaffer.github.io/ProStack-WebApp/",
-    name: "Prostack Web",
-    description: "Tech Blogs and query solution website made using Firebase",
-    github: "https://github.com/HamizMuzaffer/ProStack-WebApp.git",
-  },
-  {
     image: "/work/react-todo.png",
-    category: "React Js",
-    link: "https://todo-chi-mauve.vercel.app/",
+    category: "HTML CSS",
+    link: "",
     name: "TODO App",
-    description:
-      "A react todo app with integration of redux toolkit for state manangement",
-    github: "https://github.com/HamizMuzaffer/react-todo.git",
+    description: "A simple todo app ",
+    github: "https://github.com/Husban-Ali/TODO.git",
   },
-  {
-    image: "/work/password-changer.png",
-    category: "React Js",
-    link: "https://password-generator-one-wheat-85.vercel.app/",
-    name: "Password Generator",
-    description:
-      "A random password generator made using react hooks like useRef and useEffect",
-    github: "https://password-generator-one-wheat-85.vercel.app/",
-  },
+
   {
     image: "/work/ecommerce.png",
     category: "React Js",
@@ -185,7 +74,26 @@ const projectData = [
     name: "Ecommerce Website",
     description:
       "React ecommerce website with add product feature and admin panel to add or delete the products made using firebase",
-    github: "https://ecommerce-react-dusky.vercel.app/",
+    github: "https://github.com/Husban-Ali/Ecommerce-.git",
+  },
+
+  {
+    image: "/work/stopwatch.png",
+    category: "JavaScript",
+    link: "",
+    name: "Stopwatch",
+    description:
+      "A stopwatch with reset and pause feature for user built using vanilla JS",
+    github: "https://github.com/Husban-Ali/stopwatch.gitt",
+  },
+  {
+    image: "/work/calculator.png",
+    category: "JavaScript",
+    link: "https://husban-ali.github.io/Calculator/",
+    name: "Calculator",
+    description:
+      "A JavaScript calculator with all arithmetic operations enabled",
+    github: "https://github.com/Husban-Ali/Calculator.git",
   },
 ];
 export const Work = () => {
